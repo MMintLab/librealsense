@@ -26,6 +26,9 @@ In case the public key still cannot be retrieved, check and specify proxy settin
 `sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic main" -u`  
   Ubuntu 20 LTS:  
 `sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo focal main" -u`
+  - Note) In case you met with an error at this line, try
+ ` sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u` instead
+
 
 - Install the libraries (see section below if upgrading packages):  
   `sudo apt-get install librealsense2-dkms`  
